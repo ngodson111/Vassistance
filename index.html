@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Assistance</title>
+  </head>
+  <body>
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .wrapper {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+      }
+      .wrapper .assistancetalking {
+        height: 100vh;
+        width: 50vw;
+        background: rgb(27, 26, 26);
+        color: white;
+        position: relative;
+        padding: 10px;
+      }
+      .assistancetalking .one {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        font-size: 19px;
+      }
+      .narayans {
+        height: 100vh;
+        width: 50vw;
+        background: coral;
+        color: white;
+        position: relative;
+        padding: 10px;
+      }
+      .narayans .two {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        font-size: 19px;
+      }
+    </style>
+    <ul class="questions"></ul>
+    <div class="wrapper">
+      <div class="assistancetalking">
+        <div class="one">
+          Assistant is saying <br />
+          "<span class="assistant"></span>"
+        </div>
+      </div>
+      <div class="narayans">
+        <div class="two">
+          I am saying <br />
+          "<span class="narayan"></span>"
+        </div>
+      </div>
+    </div>
+
+    <!-- hidden js workers -->
+    <span id="femalevoice"></span>
+    <!-- hidden js workers -->
+
+    <!-- javascript files -->
+    <script src="./assets/js/app.js"></script>
+    <!-- javascript files -->
+  </body>
+</html>
